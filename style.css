@@ -1,0 +1,119 @@
+.container {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+.main-sections {
+    margin: 10px 0px 10px 0px;
+  }
+
+.body {
+    background-color: #f4f7f6;
+    padding: 2px;
+}
+
+body {
+  font-family: "GraphikETRADE",Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+header {
+    background: #5285cc;
+  }
+
+h1 {
+    padding: 3px 0;
+    margin: 0;
+    margin-top: 5px;
+    font-size: 35px;
+    color: #eee;
+    text-align: center;
+    text-shadow: 1.5px 1.5px black;
+    font-family: "GraphikETRADE",Helvetica Neue,Helvetica,Arial,sans-serif;
+  }
+
+h3 {
+    text-align: center;
+  }
+
+#subheader {
+    padding-bottom: 2px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #eee;
+    text-align: center;
+    text-shadow: 1.5px 1.5px black;
+    font-family: "GraphikETRADE",Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+#bio-image {
+    width: 300px;
+    height: 300px;
+    margin: 10px 10px;
+  }
+
+#main-bio,
+#contact-info,
+#bio-image {
+  float: left;
+}
+
+#figure {
+    position: relative;
+    background-color: #e4e6eb;
+    box-shadow: 1px 1px;
+    padding: 2px 10px .5px 10px;
+  }
+
+#contact-info {
+    width: 30%;
+  }
+
+#project-1 {
+  width: 500px;
+  height: 200px;
+  float: left;
+}
+
+#project-2 {
+  width: 500px;
+  height: 200px;
+  float: right;
+}
+
+#project-3 {
+  width: 500px;
+  height: auto;
+  float: left;
+  padding-bottom: 20px;
+}
+
+#project-4 {
+  width: 500px;
+  height: auto;
+  float: right;
+  padding-bottom: 20px;
+}
+
+#buttons {
+  display:inline-flex;
+  flex-direction:row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 0px 5px 0px;
+}
+
+#contact-me {
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  width:100%;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+  padding:10px 0px 30px 0px;
+}
