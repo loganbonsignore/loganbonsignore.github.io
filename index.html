@@ -9,9 +9,11 @@
 </head>
 <body>
     <div id="body-container" class="container">
-        <div class="heading">
-            <h1 id="header-name">Logan Bonsignore</h1>
-            <h4 id="header-subheader">Proven Business Professional Expanding Career To Data Analytics</h4>
+        <div class="row">
+            <div id="heading" class="col-12">
+                <h1 id="header-name"><strong>Logan Bonsignore</strong></h1>
+                <h4 id="header-subheader">Proven Business Professional Expanding Career To Data Analytics</h4>
+            </div>
             <hr/>
         </div>
         <div class="row">
@@ -36,20 +38,20 @@
                 </div>
             </div>
         </div>
-        <h3 class="section-headers">Project Examples</h3>
+        <h3 class="section-headers" id="project-example-title">Project Examples</h3>
         <div class="row" id="projects-container">
             <div class="col-md-3 col-sm-6">
                 <div class="projects project_1">
                     <a class="project-title" href="https://github.com/loganbonsignore/twitter-sentiment-analysis/blob/master/sentimate_analysis.ipynb" target="_blank"><strong>Twitter Sentimate Analysis</strong></a>
                     <hr />
-                    <p>This app calculates a sentiment score for any business name or relevant social topic based on recently published tweets. The topic is chosen by the user before related tweets are analyzed for sentiment using Natural Language Processing. A ‘sentiment score’ between 1-5 returned to the user along with examples of tweets used during the analysis. The Twitte API is used during the analysis.</p>
+                    <p>This app calculates a sentiment score for any business name or relevant social topic based on recently published tweets. The topic is chosen by the user before related tweets are analyzed using Natural Language Processing. A ‘sentiment score’ between 1-5 is returned to the user along with examples of tweets used during the analysis. This project leverages data from the Twitter API.</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="projects project_2">
                     <a class="project-title"  href="https://github.com/loganbonsignore/media_consumption_analysis/blob/master/important_voter_issues_analysis.ipynb" target="_blank"><strong>Media Consuption Analysis</strong></a>
                     <hr />
-                    <p>This project examines how America's media consumption habits are changing in today’s environment vs. recent election years. The analysis is focused on identifying the differences in demand for media publications related to historically important voter issues. Data from the New York Times API is used during the analysis.</p>
+                    <p>This project examines how America's media consumption habits are changing in today’s environment vs. recent election years. The analysis is focused on identifying the differences in demand for media publications related to historically important voter issues. Data from the New York Times API is used to complete this analysis.</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
@@ -63,23 +65,23 @@
                 <div class="projects project_4">
                     <a class="project-title"  href="https://github.com/loganbonsignore/sqlalchemy-challenge/blob/master/climate_starter.ipynb" target="_blank"><strong>SQL Alchemy Challenge</strong></a>
                     <hr />
-                    <p>In this project the SQLAlchemy library is used to analyze Hawaii’s weather data which is warehoused in a database. The ORM model is used to query the database used object-oriented programming. In addition, the Flask library is used to build an API (app.py) that returns Hawaii’s weather data based on the user’s custom parameters.</p>
+                    <p>In this project the SQLAlchemy library is used to analyze Hawaii’s weather data which is housed in a database. The ORM model is used to query the database using object-oriented programming. In addition, the Flask library is used to build an API (app.py) that returns Hawaii’s weather data based on the user’s custom parameters.</p>
                 </div>
             </div>
         </div>
         <div id="footer-container" class="row">
             <div class="col-6">
-                <div>
-                    <h3>Hello!</h3>
-                    <p>I want to connect with you! Let me know what you thought about the page or just reach out to say hi.</p>
+                <div class="footer-element-container">
+                    <h3 class="footer-title">If You're Reading This...</h3>
+                    <p>Let's connect! Send me a message on <a id="email" href="ttps://www.linkedin.com/in/logan-bonsignore-2506a06">Linkedin</a> or just reach out to say hi.</p>
                 </div>
             </div>
             <div class="col-6">
-                <div>
-                    <h3>Connect With Me</h3>
+                <div class="footer-element-container">
+                    <h3 class="footer-title">Connect With Me</h3>
                     <ul>
-                        <li><a href="mailto:loganbon14@gmail.com?subject=I Read Your Bio Page">Loganbon14@gmail.com</a></li>
-                        <li>Cell: 720-273-4729</li>
+                        <li><a id="email" href="mailto:loganbon14@gmail.com?subject=I Read Your Bio Page">Loganbon14@gmail.com</a></li>
+                        <li>720-273-4729</li>
                     </ul>
                 </div>
             </div>

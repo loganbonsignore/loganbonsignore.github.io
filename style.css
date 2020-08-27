@@ -1,16 +1,28 @@
 #body-container {
-  background: linear-gradient(#f5f7fa,#c3cfe2) #f5f7fa;
-  font-family: "GraphikETRADE",Helvetica Neue,Helvetica,Arial,sans-serif;
+  /* background: linear-gradient(#f5f7fa,#c3cfe2) #f5f7fa; */
+  background: linear-gradient(#eef2f3,#8e9eab) #f5f7fa;
+  /* background: #e2e6e7; */
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",Osaka,"ＭＳ Ｐゴシック", "MS PGothic",Sans-Serif;
 }
-.heading {
+#heading {
   text-align: center;
   min-height: 100px;
-  /* background-color: lightgrey; */
-  margin-bottom: 10px;
+  margin-bottom: 3%;
+  padding-top: 15px;
+  /* background: #90a8df; */
+  /* background: #c7cdda; */
 }
 
 #header-name {
   color: Black;
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Meiryo","メイリオ", "Osaka","ＭＳ Ｐゴシック", "MS PGothic",Sans-Serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  letter-spacing: .01em;
+  line-height: .8em;
+  text-transform: uppercase;
+  padding: 10px;
 }
 
 #header-subheader {
@@ -37,7 +49,7 @@
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 #bio-header-line {
-  color:rgb(96, 96, 204);
+  color:rgb(20, 86, 185);
   font-size: 20px;
 }
 
@@ -48,8 +60,9 @@
   font-weight: 400;
   /* background-color: lightgrey; */
   /* border: 4px outset #1C6EA4; */
-  border: 8px double #1C6EA4;
+  border: 8px double rgb(20, 86, 185);
   border-radius: 11px;
+  background: #eef2f3;
 }
 
 #link-buttons {
@@ -61,6 +74,7 @@
 }
 
 #button {
+  background-color: rgb(20, 86, 185);
   margin:10px;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 0px 5px rgba(0,0,0,0); 
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 0px 5px rgba(0,0,0,0);
@@ -72,46 +86,77 @@
 
 .projects {
   min-height: 10%;
-  padding: 5px;
+  padding: 5px 5px 1px 5px;
   margin: 5px;
   font-weight: 400;
   color: black;
   -webkit-box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.45); 
   box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.45);
   border-radius: 5px;
+  text-align: center;
 
+}
+
+#project-example-title {
+  text-transform: uppercase;
+  padding: 5% 0px 1% 0px;
+  font-size: 32px;
+
+}
+
+#projects-container {
+  margin-bottom: 20px;
 }
 
 .project-title {
   display: flex;
   justify-content: space-around;
   font-size: 18px;
-  
+  color: rgb(20, 86, 185);
+  text-transform: uppercase;
 }
 
 .project_1 {
-  /* background: deepskyblue; */
+  background: #eef2f3
 }
 
 .project_2 {
-  /* background: rebeccapurple; */
+  background: #eef2f3
 }
 
 .project_3 {
-  /* background: indianred; */
+  background: #eef2f3
 }
 
 .project_4 {
-  /* background: salmon; */
+  background: #eef2f3;
 }
 
 #footer-container {
-  padding: 3% 3% 3% 3%;
-  /* padding: 20px 20px 20px 20px; */
-  /* background-color: grey; */
+  padding: 3% 3% 0% 3%;
   min-height: 5%;
+  /* background: #9daebd; */
 }
 
 #lower-footer {
-  /* background-color: lightgrey; */
+  /* background: #c7cdda; */
+  /* background: #8e9eab; */
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.footer-element-container {
+  -webkit-box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.45); 
+  box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.45);
+  padding: 10px;
+  background: #eef2f3;
+  border-radius: 5px;
+}
+
+#email {
+  color: rgb(20, 86, 185);
+}
+
+.footer-title {
+  font-size: 23px;
 }
