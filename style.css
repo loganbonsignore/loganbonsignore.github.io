@@ -27,6 +27,12 @@
 
 #header-subheader {
   color:Black;
+  font-size: 22px;
+}
+
+.strong {
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .sub-header-low {
