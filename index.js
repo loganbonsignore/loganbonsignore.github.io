@@ -1,23 +1,8 @@
 // Etherscan API key
 const etherscan_api_key = "6AMB9PGBYJ5AHHCZHCCZAU5Y7E4KEVET47"
 
-// Wallet Addresses
-const metamask_address = "0x97BAd4347C45b8DF0F4ebf24D8F0250c8366F8ef"
-const ledger_address = "0xD806e6019AC21714B3B96b0731DD0715Ef2f08AC"
-var ethWalletAddress = ledger_address
-
-// Contract addresses
-var chainlinkContract = "0x514910771af9ca656af840dff83e8264ecf986ca";
-var shopxContract = "0x7BEF710a5759d197EC0Bf621c3Df802C2D60D848";
-var paidContract = "0x8c8687fC965593DFb2F0b4EAeFD55E9D8df348df";
-var aaveContract = "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9"
-var stakedAaveContract = "0x4da27a545c0c5B758a6BA100e3a049001de870f5"
-var b20Contract = "0xc4De189Abf94c57f396bD4c52ab13b954FebEfD8"
-var aiozContract = "0x626E8036dEB333b408Be468F951bdB42433cBF18"
-var croContract = "0xA0b73E1Ff0B80914AB6fe0444E65848C4C34450b"
-
 // Instanciating Web3 object
-let web3 = new Web3(Web3.givenProvider || "ws://localhost:8545");
+var web3 = new Web3(Web3.givenProvider || new Web3.providers.WebsocketProvider('ws://https://mainnet.infura.io/v3/58ea22f2caa14187bd2b8c0682c84848:8546'));
 
 // ############################### Start Definitions ###############################
 
@@ -283,7 +268,6 @@ hashTestInput = d3.select("#hash-test");
 hashFactoryInput = d3.select("#hash-factory");
 hashToTextInput = d3.select("#hash-to-text");
 
-
 addressInput.on("change", handleTextInputs);
 addressInput.on("onsubmit", handleTextInputs);
 contractInput.on("change", handleTextInputs);
@@ -300,46 +284,3 @@ hashToTextInput.on("onsubmit", hashToText);
 // Functions run at page load
 getBlockNumberNow()
 getGasPriceNow()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // Data collected from block 12601904
-// var hash = "0x3e8f21b1b8f5692ff54fe15bd5a4ac36e041e7221917eeb068bd9ee2fb769df1";
-// var extraData = "0xd883010a03846765746888676f312e31362e34856c696e7578";
-// var miner = "0x5A0b54D5dc17e0AadC383d2db43B0a0D3E029c4c";
-// var mixHash = "0x7d8ed2db39f2c6c38c1c60ab629e9ffecb3b2be1b6d1bd006bb21f41708aa715";
-// var nonce = "0x3249f90004b28ef6";
-// var parentHash = "0x504bc8bea809df6e1e6aeaf88b6c1bf435ead5658ae00a59a1301234c259abc5";
-// var receiptsRoot = "0xe04dc21d87751dd4af0325a501393d4428b9117e74a934d1f7b2f776bc23bde2";
-// var sha3Uncles = "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347";
-// var stateRoot = "0x3d56326d0d2eb90d9c05730f98f7ee2ceac3dd57a77016cf33476562529fa61c";
-// var transaction = "0xdf0b86909938749e4fc11d11856844dd1dca898d09cd20c28be0eb583bda44bb";
-// var transactionsRoot = "0xdb9f356532d8d8ab805063745a34766545729d3d817505c7b0d65c5fd777bb6b";
-
-
-// let utf8 = web3.utils.hexToUtf8(transaction); // Works for: 
-// console.log(utf8);
-
-// let ascii = web3.utils.hexToAscii(transaction);
-// console.log(ascii);
-
-// let numberString = web3.utils.hexToNumberString(transaction); // Works for all
-// console.log(numberString);
-
-// let number = web3.utils.hexToNumber("0x39296"); // Data too big
-// console.log(number);
-
