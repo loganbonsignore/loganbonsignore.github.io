@@ -2,7 +2,8 @@
 const etherscan_api_key = "6AMB9PGBYJ5AHHCZHCCZAU5Y7E4KEVET47"
 
 // Instanciating Web3 object
-var web3 = new Web3(Web3.givenProvider || new Web3.providers.WebsocketProvider('wss://mainnet.infura.io/v3/58ea22f2caa14187bd2b8c0682c84848:8546'));
+// var web3 = new Web3(Web3.givenProvider || new Web3.providers.WebsocketProvider('wss://mainnet.infura.io/v3/58ea22f2caa14187bd2b8c0682c84848:8546'));
+var web3 = new Web3(new Web3.providers.HttpProvider('https://mainnet.infura.io/v3/58ea22f2caa14187bd2b8c0682c84848'));
 
 // ############################### Start Definitions ###############################
 
